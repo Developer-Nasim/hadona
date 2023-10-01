@@ -17,6 +17,7 @@ font-family: 'DM Sans', sans-serif;
   --f24 : 24px;
   --f20 : 20px;
   --f18 : 18px;
+  --f16 : 16px;
 }
 
 
@@ -509,7 +510,7 @@ ul.side_nav li a.active svg path.color {
 .game_opt ul li {
     border-radius: 15px;
     background: var(--Background-button-2, #1A1C22);
-    flex: 0 0 48%;
+    flex: 0 0 48.4%;
     padding: 30px 24px;
     border: 1px solid #1a1c22;
     transition: all .3s;
@@ -698,6 +699,7 @@ ul li .icon_wrp a {
     margin-bottom: 0;
     line-height: 1;
     padding-top: 3px;
+    font-size: var(--f16);
 }
 
 .name_id p span {
@@ -705,6 +707,7 @@ ul li .icon_wrp a {
     color: var(--offColor);
     font-size: 14px;
     line-height: 1.5;
+    font-weight: 500;
 }
 .share_btn {border-radius: 40px;background: var(--Background-Button, #282C35);display: block;text-align: center;padding: 5px 0;transition: all .3s;color: #0BE288;}
 
@@ -1313,6 +1316,8 @@ tr.Vocabulary td {
     right: 0px;
     top: 50%;
     transform: translateY(-50%);
+    font-size: var(--f16);
+    font-weight: 600;
 }
 .pay_History_list.scroll_style.scrollBox{
     padding-right: 38px !important;
