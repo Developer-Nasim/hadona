@@ -112,6 +112,7 @@ li {
 .pt_150{padding-top: 150px;}
 .pt_100{padding-top: 100px;}
 .pt_50{padding-top: 50px;}
+.pr_5{padding-right: 5px !IMPORTANT;}
 
 .mb_150{margin-bottom: 150px;}
 .mb_100{margin-bottom: 100px;}
@@ -205,7 +206,7 @@ li {
 
 .header_option ul li {
 }
-.src_box {border-radius: 40px;border: 1px solid var(--Stroke-button, #444A5B);height: 40px;display: flex;align-items: center;padding: 0 24px;min-width: 420px;width: 100%;}
+.src_box {border-radius: 40px;border: 1px solid var(--Stroke-button, #444A5B);height: 40px;display: flex;align-items: center;padding: 0 24px;min-width: 427px;width: 100%;}
 
 .src_box input {
     background: no-repeat;
@@ -419,20 +420,21 @@ ul.side_nav li a.active svg path.color {
     font-weight: 700;
     color: #000;
 }
-
 .signIn_left h1 {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 48.5%;
     text-align: center;
     transform: translate(-50%, -50%);
     z-index: 9;
+    line-height: 41px;
 }
 .sign_form {max-width: 365px;width: 100%;display: flex;flex-direction: column;gap: 24px 0;align-items: center;}
 
 .sign_form > p {
     color: var(--offColor);
     font-weight: 500;
+    line-height: 13px;
 }
 
 .sign_form h1 {
