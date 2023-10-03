@@ -436,7 +436,11 @@ ul.side_nav li a.active svg path.color {
     font-weight: 500;
     line-height: 13px;
 }
+button.eye_btn:not(.active) {}
 
+button.eye_btn:not(.active) img.IconShow {
+    display: none;
+}
 .sign_form h1 {
     text-align: center;
     margin-bottom: 0;
