@@ -647,7 +647,16 @@ ul li .icon_wrp a {
 .game_table table {}
 
 
+
+
+
+.added_spacing_at_up_down_oftable,
+.added_spacing_at_down_oftable {
+    position: relative;
+    padding-bottom: 24px !IMPORTANT;
+}
 .added_spacing_at_up_down_oftable:after,
+.added_spacing_at_down_oftable:after,
 .added_spacing_at_up_down_oftable:before {
     content: "";
     position: absolute;
@@ -659,15 +668,39 @@ ul li .icon_wrp a {
     z-index: 99;
 }
 
+.added_spacing_at_down_oftable:after,
 .added_spacing_at_up_down_oftable:after {
     top: auto;
     bottom: 0;
     border-radius: 0 0 10px 10px;
     height: 22px;
 }
+.added_spacing_at_down_oftable:after{
+    border-radius: 0 0 0px 10px !important;
+}
+.added_spacing_at_up_down_oftable.ad_spc_2,
+.added_spacing_at_down_oftable {
+    padding-bottom: 0 !IMPORTANT;
+}
 
 
 
+
+
+
+.added_spacing_at_up_down_oftable.ad_spc_2::before {
+    top: 0;
+    border-radius: 10px 10px 0 0;
+}
+.topExrLayer {
+    position: absolute;
+    background: #121317;
+    width: calc(100% - 40px);
+    height: 15px;
+    left: 0;
+    top: -5px;
+    z-index: 2;
+}
 
 .hm_tbl {}
 
