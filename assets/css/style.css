@@ -646,6 +646,29 @@ ul li .icon_wrp a {
 
 .game_table table {}
 
+
+.added_spacing_at_up_down_oftable:after,
+.added_spacing_at_up_down_oftable:before {
+    content: "";
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 24px;
+    background: #1b1c22;
+    top: 99px;
+    left: 0;
+    z-index: 99;
+}
+
+.added_spacing_at_up_down_oftable:after {
+    top: auto;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    height: 22px;
+}
+
+
+
+
 .hm_tbl {}
 
 .hm_tbl th ,.hm_tbl td {
@@ -999,7 +1022,7 @@ tr.Vocabulary td {
     border-spacing: 0;
 }
 .trSpcWithBorder table tr td{
-    border-bottom: 24px solid transparent;
+    /* border-bottom: 24px solid transparent; */
 }
 .trSpcWithBorder table tr:last-child td{
     border: none !important;
