@@ -102,7 +102,6 @@ h6 {
 ul {
   margin: 0px;
   padding: 0px; }
-
 li {
   list-style: none; }
 
@@ -113,6 +112,8 @@ li {
 .pt_100{padding-top: 100px;}
 .pt_50{padding-top: 50px;}
 .pr_5{padding-right: 5px !IMPORTANT;}
+.pr-3{padding-right: 3px !important;}
+
 
 .mb_150{margin-bottom: 150px;}
 .mb_100{margin-bottom: 100px;}
@@ -120,7 +121,9 @@ li {
 .mt_150{margin-top: 150px;}
 .mt_100{margin-top: 100px;}
 .mt_50{margin-top: 50px;}
- 
+.gap0{
+    gap: 0 0;
+}
 .thm_btn{
     width: 170px;
     height: 40px;
@@ -623,7 +626,7 @@ a.Vocabulary.green span {
     fill: #fff;
 }
 
-.game_list_top > a {color: var(--offColor);font-size: var(--f18);font-weight: 500;width: 50%;}
+.game_list_top > a {color: var(--borderColor);font-size: var(--f18);font-weight: 500;width: 50%;}
 
 .game_list_top ul {
     display: flex;
@@ -771,10 +774,23 @@ ul li .icon_wrp a {
     line-height: 1.5;
     font-weight: 500;
 }
-.share_btn {border-radius: 40px;background: var(--Background-Button, #282C35);display: block;text-align: center;padding: 5px 0;transition: all .3s;color: #0BE288;}
+.share_btn {
+    border-radius: 40px;background: var(--Background-Button, #282C35);display: block;text-align: center;padding: 5px 0;transition: all .3s;color: #0BE288;
+}
 
 .share_btn:hover {background: #3d4451;}
+a.share_btn.delet {
+    max-width: 116px;
+    height: 24px;
+    padding: 0;
+    margin: auto;
+}
 
+a.share_btn.delet img {
+    margin-top: -2px;
+    max-height: 14px;
+    width: auto;
+}
 .zl-scrollBarBox{
   height: auto;
   position:absolute;
@@ -789,7 +805,7 @@ ul li .icon_wrp a {
   position:absolute;
   left:0;
   top:0;
-  background: #444A5B;
+  background: var(--borderColor);
   transition:background 0.3s;
 }
 
@@ -833,11 +849,19 @@ ul li .icon_wrp a {
   position: sticky;
   top: 0;
   background: #282c35;
-  padding-top: 14px;
+  padding-top: 13px;
+  padding-bottom: 11px;
   z-index: 99;
   line-height: 1;
 }
-
+.centered_text_exept_first thead tr th,
+.centered_text_exept_first tbody tr td{
+    text-align: center;
+}
+.centered_text_exept_first thead tr th:first-child,
+.centered_text_exept_first tbody tr td:first-child{
+    text-align: left;
+}
 
 
 
@@ -871,7 +895,7 @@ ul li .icon_wrp a {
     border: 1.5px solid var(--Stroke-button, #444A5B);
     font-size: var(--f18);
     font-weight: 500;
-    color: #444A5B;
+    color: var(--borderColor);
     padding: 7px 22px;
     line-height: 1;
     gap: 8px;
@@ -1273,7 +1297,9 @@ tr.Vocabulary td {
 .receved-area .row {
     gap:  40px 20px;
 }
-
+.receved-area .row.gap0{
+    gap:  0px 0px;
+}
 .receved-area .row .col-lg-6 {
     width: 48%;
 }
@@ -1553,7 +1579,7 @@ textarea::-webkit-scrollbar
 textarea::-webkit-scrollbar-thumb
 {
 	border-radius: 20px; 
-	background-color: #444A5B;
+	background-color: var(--borderColor);
 }
 .supportmessages-wrp form > .thm_btn {
     margin-top: 60px;
