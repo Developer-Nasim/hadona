@@ -112,7 +112,7 @@ li {
 .pt_100{padding-top: 100px;}
 .pt_50{padding-top: 50px;}
 .pr_5{padding-right: 5px !IMPORTANT;}
-.pr-3{padding-right: 3px !important;}
+.pr-3,.pr_3{padding-right: 3px !important;}
 
 
 .mb_150{margin-bottom: 150px;}
@@ -772,7 +772,7 @@ ul li .icon_wrp a {
     color: var(--offColor);
     font-size: 14px;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 400;
 }
 .share_btn {
     border-radius: 40px;background: var(--Background-Button, #282C35);display: block;text-align: center;padding: 5px 0;transition: all .3s;color: #0BE288;
@@ -883,11 +883,13 @@ a.share_btn.delet img {
 .Selection_nav ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .Selection_nav ul li {
-    width: 20%;
+    max-width: 100%;
+    width: max-content;
+    margin: 0 20px;
 }
 
 .Selection_nav ul li a {
