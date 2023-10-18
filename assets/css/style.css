@@ -112,6 +112,7 @@ li {
 .pt_100{padding-top: 100px;}
 .pt_50{padding-top: 50px;}
 .pr_5{padding-right: 5px !IMPORTANT;}
+.pr_24{padding-right: 24px !IMPORTANT;}
 .pr-3,.pr_3{padding-right: 3px !important;}
 
 
@@ -142,6 +143,9 @@ li {
 .thm_btn:hover {
     color: var(--thmColor);
     background: #fff;
+}
+hr{
+    border-radius: 10px;
 }
 
 /* default-css END 
@@ -447,7 +451,7 @@ button.eye_btn:not(.active) img.IconShow {
 .sign_form h1 {
     text-align: center;
     margin-bottom: 0;
-    color: var(--offColor);
+    color: var(--borderColor);
 }
 .input_blk {height: 60px;display: flex;background: var(--bgColor);border-radius: 15px;overflow: hidden;padding: 10px 24px;position: relative;align-items: center;width: 100%;}
 
@@ -516,6 +520,7 @@ button.eye_btn:not(.active) img.IconShow {
     gap: 24px;
 }
 
+.game_opt .gpts,
 .game_opt ul li {
     border-radius: 15px;
     background: var(--Background-button-2, #1A1C22);
@@ -529,20 +534,20 @@ button.eye_btn:not(.active) img.IconShow {
     border-color: var(--thmColor);
 }
 
-.game_opt ul li a {
+.game_opt .gpts a,.game_opt ul li a {
     font-size: var(--f24);
     font-weight: 500;
 }
 
-.game_opt ul li a img {
+.game_opt .gpts a img,.game_opt ul li a img {
     transition: all .3s;
 }
 
-.game_opt ul li a:hover img {
+.game_opt .gpts a:hover img,.game_opt ul li a:hover img {
     rotate: -45deg;
 }
 
-.game_opt ul li p {
+.game_opt .gpts p,.game_opt ul li p {
     margin-bottom: 30px;
     display: flex;
     font-size: 16px;
@@ -551,7 +556,7 @@ button.eye_btn:not(.active) img.IconShow {
     gap: 14px;
 }
 
-.game_opt ul li p span {
+.game_opt .gpts p span,.game_opt ul li p span {
     display: block;
     max-width: 170px;
     line-height: 1.3;
@@ -778,6 +783,18 @@ ul li .icon_wrp a {
     border-radius: 40px;background: var(--Background-Button, #282C35);display: block;text-align: center;padding: 5px 0;transition: all .3s;color: #0BE288;
 }
 
+.recovTble .share_btn { 
+    padding: 5px 14px; 
+    width: 116px;
+    height: 24px;
+    margin: auto;
+    line-height: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
 .share_btn:hover {background: #3d4451;}
 a.share_btn.delet {
     max-width: 116px;
@@ -883,7 +900,7 @@ a.share_btn.delet img {
 .Selection_nav ul {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .Selection_nav ul li {
@@ -950,6 +967,7 @@ a.share_btn.delet img {
 
 .ground_content hr {
     margin: 24px;
+    color: var(--borderColor);
 }
 
 .ground_content h4 {
@@ -1276,8 +1294,15 @@ tr.Vocabulary td {
 .flex {
     display: flex;
 }
-.history_blk {position: relative;margin-top: 24px;}
-
+.history_blk {
+    position: relative;
+    margin-top: 24px;
+    height: 300px;
+}
+.history_blk img {
+    width: 100%;
+    height: 100%;
+}
 .history_blk h1 {
     position: absolute;
     left: 50%;
@@ -1329,8 +1354,11 @@ tr.Vocabulary td {
     margin-inline: auto;
     margin-top: 20px;
 }
-.Cards {margin: 14px auto 40px;display: block;}
-.card-info .input_blk {margin-bottom: 40px;}
+.Cards {
+    margin: 18px auto 60px;
+    display: block;
+}
+.card-info .input_blk {margin-bottom: 24px;}
 
 .supportmessages-wrp {}
 
@@ -1345,7 +1373,7 @@ tr.Vocabulary td {
     display: block;
     font-weight: 500;
     color: var(--offColor);
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     line-height: 1;
 }
 
@@ -1365,7 +1393,7 @@ tr.Vocabulary td {
 
 .confirm_content h1 {
     word-spacing: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .confirm_content h4 {
@@ -1377,7 +1405,7 @@ tr.Vocabulary td {
     margin-inline: auto;
 }
 
-.Receipt_link {margin-top: 20px;color: var(--offColor);font-size: var(--f18);}
+.Receipt_link {margin-top: 24px;color: var(--borderColor);font-size: 14px;}
 
 .pay_History{
     max-width: 407px;
@@ -1615,12 +1643,16 @@ label.avtr img {
 button.thm_btn.inactive {
     background: var(--borderColor);
 }
-.disabledBlk {
-    opacity: .5;
+.disabledBlk { 
     pointer-events: none;
 }
-
-
+.disabledBlk label,
+.disabledBlk .input_blk input::placeholder{
+    color: #282C35;
+}
+.disabledBlk label img {
+    opacity: .3;
+}
 
 
 
